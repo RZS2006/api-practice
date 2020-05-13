@@ -1,0 +1,39 @@
+<!-- API Practice -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Practice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/render.js" defer></script>
+    <script src="./js/xml.js" defer></script>
+    <script src="./js/fetch.js" defer></script>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1>API Practice</h1>
+            <p>With XMLHttpRequest and Fetch</p>
+        </div>
+        <div class="button-container">
+            <button class="btn btn-get-xml" id="btn-get-xml">GET with XMLHttpRequest</button>
+            <button class="btn btn-get-fetch" id="btn-get-fetch">GET with Fetch</button>
+            <button class="btn btn-post-xml" id="btn-post-xml">POST with XMLHttpRequest</button>
+            <button class="btn btn-post-fetch" id="btn-post-fetch">POST with Fetch</button>
+        </div>
+        <div class="post-input-container">
+            <label for="title" class="post-label">Title</label>
+            <input type="text" name="title" class="post-input-title" id="post-input-title">
+            <label for="message" class="post-label">Message</label>
+            <textarea name="message" class="post-input-message" id="post-input-message"></textarea>
+        </div>
+        <div class="alert-container" id="alert-container">
+            <h6 class="alert-message" id="alert-message">Error! Check the console.</h6>
+        </div>
+        <div class="api-container" id="api-container">
+        </div>
+    </div>
+</body>
+</html>
