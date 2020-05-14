@@ -20,7 +20,7 @@ const xmlRequest = (method, url, data) => {
         }
 
         xhr.onload = () => {
-            if (xhr.status == 200) {
+            if (xhr.status >= 200 && xhr.status <= 299) {
                 resolve(xhr.response)
             } else {
                 reject(xhr.response)
@@ -76,7 +76,7 @@ const xmlPost = async () => {
         renderStatus("success")
         // Display Results
         resArr = [];
-        jsonArr.push(res)
+        resArr.push(res)
         renderData(resArr)
     } catch (err) {
         console.log(err)
